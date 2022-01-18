@@ -36,7 +36,22 @@ README.md              # Readme
 ```
 
 ## How to Fork
-- Clone the repository include (main and dev branch as default)
+- Create new repository on GitHub (`new-repository-name`)
+- Create another folder on local machine
+- Clone bare this repository\
+    ```bash
+    git clone --bare https://github.com/kgmedia-data/python-boilerplate.git
+    ```
+- CD to this folder (with .git suffix) and push mirror to GitHub
+    ```bash
+    cd python-boilerplate.git
+    git push --mirror https://github.com/kgmedia-data/new-repository-name.git
+    ```
+- Remove `python-biolerplate.git` folder from local folder
+- Clone `new-repository-name` to local folder
+
+
+## How to Code
 - Create a new branch from Boards/dev
 - Branch Name:
   ```
