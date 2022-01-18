@@ -16,10 +16,15 @@ notebook/
     test.ipynb         # Test notebook (for development)
 scripts/
     __init__.py        
-    job.py             # Job script               
+    job.py             # Job script 
+tests/
+    __init__.py
+    test_my_libs.py    # Test libraries
+    test_job.py        # Test job script              
 .dockerignore          # Docker ignore file
 .env-example           # Environment variables example
 .gitignore             # Git ignore file
+conftest.py            # Test configuration file
 Dockerfile.kubernetes  # Dockerfile for kubernetes
 Dockerfile.lambda      # Dockerfile for lambda
 main.job.py            # Main job script
