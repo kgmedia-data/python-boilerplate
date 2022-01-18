@@ -1,0 +1,11 @@
+FROM public.ecr.aws/lambda/python:3.9
+
+RUN pip install --upgrade pip
+
+COPY poetry.lock pyproject.toml ./
+RUN pip install poetry && \
+    poetry config virtualenvs.create false && \
+    poetry install --no-dev
+
+COPY . ./
+CMD [ "main.lambda_handler" ]
